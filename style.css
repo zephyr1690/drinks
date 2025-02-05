@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fffbe8;
+  margin: 0;
+  padding: 0;
+  color: #3e2723; 
+  background-image: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #6d4c41; 
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+h1 {
+  color: #ffcc80; 
+  font-size: 36px;
+}
+.item {
+  margin: 20px 0;
+  padding: 10px;
+}
+.item label {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #ffcc80;
+}
+.item select,
+.item button,
+.item input {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+}
+.item button {
+  background-color: #ff8f00;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.item button:hover {
+  background-color: #e65100;
+}
+.cart {
+  margin-top: 30px;
+}
+.cart h2 {
+  color: #ffcc80;
+}
+.cart ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.cart li {
+  padding: 12px;
+  background-color: #ffcc80; 
+  margin: 8px 0;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: left;
+  color: #3e2723;
+}
+.cart button {
+  background-color: #8d6e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.cart button:hover {
+  background-color: #795548;
+}
+.total {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc80;
+}
+.error {
+  color: #ff5252;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#refund {
+  margin-top: 20px;
+  background-color: #ff8f00;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#refund:hover {
+  background-color: #e65100;
+}
+.change,
+.refundMessage {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffcc80;
+}
+.wallet {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffcc80;
+}
+#reset {
+  margin-top: 20px;
+  background-color: #ffa726;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#reset:hover {
+  background-color: #fb8c00;
+}
+
+
+
+.footer p {
+    display: flex; 
+    color: white;
+    height: 100%;
+    justify-content: center;
+    
+    place-items: center;
+}
+.footer {
+    height: 100px;
+    place-items: center;
+    background-color: #3e2723;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
