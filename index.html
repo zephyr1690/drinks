@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calvario's Drinks</title>
+    <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calvario's Drinks</h1>
+
+      <div class="wallet">
+        Wallet Balance: ₱<span id="walletBalance">0.00</span>
+      </div>
+
+      <div class="item">
+        <label for="walletMoneyInput">Enter Wallet Money (₱):</label>
+        <input
+          type="number"
+          id="walletMoneyInput"
+          placeholder="Enter balance"
+          onchange="setWalletBalance()"
+        />
+      </div>
+
+      <div class="item">
+        <label for="coffee">Select Coffee Flavor:</label>
+        <select id="coffee">
+          <option value="Nescafe">Nescafe - ₱13.00</option>
+          <option value="Kopiko Blanca">Kopiko Blanca - ₱15.00</option>
+          <option value="Greatest White">Greatest White - ₱21.00</option>
+        </select>
+        <button
+          onclick="addToCart('Coffee', document.getElementById('coffee').value, getPrice('coffee'))"
+        >
+          Add Coffee to Cart
+        </button>
+      </div>
+
+      <div class="item">
+        <label for="soda">Select Soda Flavor:</label>
+        <select id="soda">
+          <option value="Sprite">Sprite - ₱10.00</option>
+          <option value="Royal">Royal - ₱15.50</option>
+          <option value="Pepsi">Pepsi - ₱20.00</option>
+        </select>
+        <button
+          onclick="addToCart('Soda', document.getElementById('soda').value, getPrice('soda'))"
+        >
+          Add Soda to Cart
+        </button>
+      </div>
+
+      <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartList">
+
+
+        
+        </ul>
+        <div class="total">
+          Total: ₱<span id="totalPrice">0.00</span>
+        </div>
+        <div id="error" class="error"></div>
+        <button onclick="checkout()">Checkout</button>
+        <div id="change" class="change"></div>
+        <button id="refund" onclick="refund()">
+          Cancel Purchase & Refund
+        </button>
+        <div id="refundMessage" class="refundMessage"></div>
+      </div>
+
+      <button id="reset" onclick="resetAllData()">Reset All Data</button>
+    </div>
+<hr>
+
+
+    <footer class="footer">
+        <p> © 2025 Calvario's Drinks. All Rights Reserved. Designed By John Luis.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
